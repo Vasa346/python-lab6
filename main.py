@@ -7,12 +7,14 @@ from openpyxl import Workbook
 from recipes.wok import Wok
 from recipes.burger import Burger
 from recipes.pizza import Pizza
+from db_manager import DBManager
 
 class RecipeApp:
     def __init__(self, root):
         self.root = root
         self.root.title("Расчёт рецептов")
         self.root.geometry("500x500")
+        self.db = DBManager()
         
         # Выбор рецепта
         ttk.Label(root, text="Выберите рецепт:").pack(pady=5)
@@ -81,6 +83,7 @@ class RecipeApp:
         calories = obj.calculate_calories()
         
         self.last_result = (recipe, ingredients, cost, calories)
+        self.db.save_calculation(recipe, ingredients, cost, calories)
         self.result_label.config(text=f"Стоимость: {cost} руб.\nКалорийность: {calories} ккал")
     
     def save_to_excel(self):
