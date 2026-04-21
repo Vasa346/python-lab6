@@ -20,7 +20,21 @@
 - Оформлен отчёт.
 
 ## Скриншоты результатов
-*(Сюда вставить скриншоты через GitHub)*
+
+1. Графический интерфейс на Tkinter с расчётом рецепта
+<img width="497" height="412" alt="изображение" src="https://github.com/user-attachments/assets/88f9b950-cc6c-4c49-9efa-643565ffb3ab" />
+
+2. Отчёт в Excel с результатами расчёта
+<img width="478" height="443" alt="изображение" src="https://github.com/user-attachments/assets/ddf11c02-0069-4e6f-85a9-a39d065b5dc7" />
+
+3. Контейнер PostgreSQL в Docker Desktop
+<img width="954" height="487" alt="изображение" src="https://github.com/user-attachments/assets/135767d0-b299-465f-9c78-cb87b5236bf3" />
+
+4. Проверка сохранённых данных в БД
+<img width="954" height="124" alt="изображение" src="https://github.com/user-attachments/assets/7ea3ad9a-4c6b-4abe-97c9-1f70e10354f2" />
+
+5. История коммитов (git log --oneline -5)
+<img width="946" height="129" alt="изображение" src="https://github.com/user-attachments/assets/21e612be-11fb-40a4-a1cd-9b091f7b8f8f" />
 
 ## Ссылки на используемые материалы
 - [Официальная документация Python](https://docs.python.org/3/)
